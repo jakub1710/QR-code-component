@@ -15,7 +15,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 3rem 2rem;
+	width: 100vw;
+	height: 100vh;
 	font-family: 'Outfit', sans-serif;
 	font-size: 62.5%;
 	background-color: var(--light-gray);
@@ -23,7 +24,7 @@ body {
 
 .wrapper {
 	position: relative;
-	width: 37.5rem;
+	max-width: 320px;
 	padding: 1rem;
 	background-color: var(--white);
 	border-radius: 1.5rem;
@@ -32,15 +33,16 @@ body {
 img {
 	max-width: 100%;
 	border-radius: 1.5rem;
+	width: 100%;
 }
 
-.info-section {
-	margin: 1.5rem;
+.section-text {
+	margin: 1rem;
 }
 
-h2.title {
-	margin-bottom: 20px;
-	font-size: 1.2rem;
+h1.title {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
@@ -54,14 +56,9 @@ h2.title {
 	color: var(--dark-blue);
 }
 
-@media (min-width: 1024px) {
-	.wrapper {
-		width: 30rem;
-		padding: 50px;
-	}
+@media (min-width: 1400px) {
 
 	img {
-		width: 100%;
 		transition: transform 0.3s;
 	}
 
@@ -69,20 +66,7 @@ h2.title {
 		transform: scale(1.1);
 	}
 
-	.info-section {
-		margin: 40px 10px 0px;
-		padding: 30px 40px;
-	}
-
-	h2.title {
-		font-size: 2rem;
-		text-align: center;
-	}
-
 	.text {
-		margin: 1rem 0;
-		font-size: 1.8rem;
-		text-align: center;
-		color: var(--grayish-blue);
+		margin: 0.5rem;
 	}
 }
